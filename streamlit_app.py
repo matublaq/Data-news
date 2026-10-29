@@ -5,53 +5,19 @@ from utils import *
 st.set_page_config(
     page_title = "Matublaq"
 )
-# CSS
-# st.markdown("""
-#     <style>
-#     /* Cambiar el color de fondo principal de la aplicación */
-#     .stApp {
-#         background-color: #5d4c4b;
-#     }
-    
-#     /* Modificar el padding superior e inferior del contenedor principal */
-#     .block-container {
-#         padding-top: 2rem;
-#         padding-bottom: 2rem;
-#         padding-left: 3rem;
-#         padding-right: 3rem;
-#     }
-    
-#     /* Cambiar el color de fondo de la barra lateral (sidebar) */
-#     [data-testid="stSidebar"] {
-#         background-color: #3c2a30;
-#     }
-#     </style>
-# """, unsafe_allow_html=True)
 
-#---------- test área ----------
+# Contenedor flex en HTML que NUNCA se romperá ni se pondrá en vertical
 st.markdown("""
-    <style>
-    .test-container {
-        width: 100%; /* Ancho */
-        height: 100px /* Alura */
-    }
-    </style>
+    <div style="display: flex; gap: 8px; width: 100%;">
+        <div style="flex: 1; height: 30px; background-color: #3c2a30; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">#3c2a30</div>
+        <div style="flex: 1; height: 30px; background-color: #5d4c4b; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">#5d4c4b</div>
+        <div style="flex: 1; height: 30px; background-color: #79676c; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">#79676c</div>
+        <div style="flex: 1; height: 30px; background-color: #938287; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">#938287</div>
+        <div style="flex: 1; height: 30px; background-color: #aba0a4; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">#aba0a4</div>
+    </div>
 """, unsafe_allow_html=True)
-st.markdown("<div class='test-container'>", unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
-with col1: 
-    color1, color2, color3, color4, color5 = st.columns(5)
-    with color1: 
-        st.markdown("<style>background-color: #3c2a30;</style>", unsafe_allow_html=True)
-    with color2: 
-        st.markdown("<style>background-color: #5d4c4b;</style>", unsafe_allow_html=True)
-    with color3: 
-        st.markdown("<style>background-color: #79676c;</style>", unsafe_allow_html=True)
-
-st.markdown("</div>", unsafe_allow_html=True)
 #---------- Home page ----------
 st.markdown("<h1 style='text-align: center;'>Data news</h1>", unsafe_allow_html=True)
-
-#---------- Sidebar ----------
-# st.sidebar("<p>Options</p>")
+with st.container(border=True):
+    st.markdown("<p style='text-align: left;'>Data-science applied to news.<br>100% official data.</p>", unsafe_allow_html=True)
