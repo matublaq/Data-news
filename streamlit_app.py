@@ -48,17 +48,17 @@ st.divider()
 # Functions.
 def project_card(image, link, title):
     tarjeta_html = f"""
-    <a href="{link}" target="_blank" style="text-decoration: none; width: 85.">
+    <a href="{link}" target="_blank" style="text-decoration: none;">
         <div style="
-            width: 434px;
-            height: 272px;
+            width: 324px;
+            height: 204px;
             border: 3px solid #33322B;
             border-radius: 12px;
             overflow: hidden;
             position: relative;
             background-color: #000000;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 0px auto 25px auto;
+            margin: 15px auto;
         ">
             <img src="{image}" style="
                 width: 100%;
