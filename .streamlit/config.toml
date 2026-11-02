@@ -17,22 +17,22 @@ maxUploadSize = 200
 [browser]
 [theme]
 # Color principal (usado en botones, sliders, enlaces y destacados)
-primaryColor = "#FF4B4B"
+primaryColor = "#EBC301"
 
 # Color de fondo principal de la aplicación
-backgroundColor = "#5d4c4b"
+backgroundColor = "#413D2B"
 
 # Color de fondo secundario (usado en la barra lateral/sidebar y tarjetas)
-secondaryBackgroundColor = "#79676c"
+secondaryBackgroundColor = "#6B6236"
 
 # Color principal del texto
-textColor = "#31333F"
+textColor = "#C0A520"
 
 # Tipografía ("sans serif", "serif", o "monospace")
 font = "sans serif"
 
 [theme.sidebar]
-primaryColor = "#3c2a30"
+primaryColor = "#33322B"
 
 [secrets]
 # None for a moment
