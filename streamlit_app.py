@@ -13,7 +13,7 @@ st.html(
     """
 )
 
-# Contenedor flex en HTML que NUNCA se romperá ni se pondrá en vertical
+# Contenedor flex en HTML que NUNCA se romperá ni se pondrá en vertical. 
 st.markdown("""
     <style>
         /* Estilos */
@@ -86,7 +86,7 @@ def project_card(image, link, title):
 
 col1b, col2b = st.columns(2)
 with col1b: 
-    project_card(image="https://images.unsplash.com/photo-1579546929518-9e396f3cc809", link="https://streamlit.io", title="CO2_vehicle_contamination")
+    project_card(image="/app/static/CO2_vehicle_contamination.png", link="https://streamlit.io", title="CO2_vehicle_contamination")
 with col2b: 
     project_card(image="https://images.unsplash.com/photo-1557683316-973673baf926", link="https://github.com", title="Spain train")
 

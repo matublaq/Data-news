@@ -1,12 +1,18 @@
 [global]
+
 [logger]
+
 [client]
-showErrorDetaild = "none"
+showErrorDetails = "none"
 
 [runner]
+
 [server]
 # Desactiva la comprobación automática de la dirección de correo
 headless = true
+
+# Habilita el servidor estático
+enableStaticServing = true
 
 # Cambia el puerto en el que se ejecuta la app (por defecto 8501)
 port = 8501
