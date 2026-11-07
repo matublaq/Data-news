@@ -8,7 +8,7 @@ st.set_page_config(
 st.html(
     """
     <style>
-        hr { border-color: #0d0d38 !important; margin: 0px; padding: 0px;}
+        hr {border-color: #968532 !important; margin: 0px; padding: 0px;}
     </style>
     """
 )
@@ -17,6 +17,9 @@ st.html(
 st.markdown("""
     <style>
         /* Estilos */
+        div[data-testid='stDivider'] {
+            margin-bottom: 0.0rem; 
+        }
     </style>
     <div style="display: flex; gap: 8px; width: 100%;">
         <div style="flex: 1; height: 30px; background-color: #33322B; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">#33322B</div>
@@ -50,8 +53,8 @@ def project_card(image, link, title):
     tarjeta_html = f"""
     <a href="{link}" target="_blank" style="text-decoration: none;">
         <div style="
-            width: 324px;
-            height: 204px;
+            width: 194.4px; /*324 * 0.6*/
+            height: 122.4px; /*204 * 0.6*/
             border: 3px solid #33322B;
             border-radius: 12px;
             overflow: hidden;
@@ -86,7 +89,7 @@ def project_card(image, link, title):
 
 col1b, col2b = st.columns(2)
 with col1b: 
-    project_card(image="/app/static/CO2_vehicle_contamination.png", link="https://streamlit.io", title="CO2_vehicle_contamination")
+    project_card(image="/app/static/CO2_vehicle_contamination.png", link="https://streamlit.io", title="Vehicle contamination")
 with col2b: 
     project_card(image="https://images.unsplash.com/photo-1557683316-973673baf926", link="https://github.com", title="Spain train")
 
